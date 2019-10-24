@@ -1,0 +1,159 @@
+.promo{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 360px;
+	background: #20b2aa;
+}
+.promo__btns{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	flex-basis: 45%;
+	z-index: 6;
+}
+.promo__btns__link{
+	display: block;
+	width: 33.3%;
+	height: 20px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	&:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+}
+.promo__list{
+	list-style: none;
+	padding-left: 120px;
+	flex-basis: 55%;
+	background-color: rgba(lightslategray, 0.5);
+}
+
+.promo__item{
+	position: relative;
+	padding-top: 55px;
+	font-size: 30px;
+	&::before{
+		content: '';
+		width: 106px;
+		height: 105px;
+		position: absolute;
+		top: 30px;
+		left: -110px;
+	}
+}
+.promo__item--1{
+	&::before{
+		background: url(../img/spa-darth-vader@3x.png) no-repeat center;
+	}
+}
+.promo__item--2{
+	padding-left: 100px;
+	&::before{
+		left: -10px;
+		background: url(../img/spa-rover@3x.png) no-repeat center;
+	}
+}
+.promo__item--3{
+	&::before{
+		background: url(../img/spa-orbit-2@3x.png) no-repeat 100% 100%;
+	}
+}
+.promo-text{
+	font-size: 14px;
+}
+.technology__popup{
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	height: 340px;
+  width: 100%;
+  background-color: #fff;
+}
+.technology__list{
+	list-style: none;
+	font-size: 41px;
+}
+.technology__item {
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	font-family: "DisneyPark", sans serif;
+	&:hover{
+		background-color: #20b2aa;
+	}
+	&:last-child{
+		border: none;
+		font-size: 43px;
+	}
+}
+
+.technology__item a{
+	display: block;	
+	width: 100%;
+	color: #000;
+}
+.aboutme__popup{
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	height: 340px;
+  width: 100%;
+  background-color: #fff;
+}
+.aboutme__list{
+	list-style: none;
+	font-size: 41px;
+}
+.aboutme__item{
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	font-family: "DisneyPark", sans serif;
+	&:hover{
+		background-color: #20b2aa;
+	}
+		&:last-child{
+		border: none;
+		font-size: 43px;
+	}
+}
+.aboutme__item a{
+	display: block;	
+	width: 100%;
+	color: #000;
+}
+.contacts__popup{
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	height: 341px;
+  width: 100%;
+  background-color: #fff;
+}
+.contacts__list{
+	list-style: none;
+	font-size: 41px;
+}
+.contacts__item{
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	font-family: "DisneyPark", sans serif;
+	&:hover{
+		background-color: #20b2aa;
+	}
+		&:last-child{
+		border: none;
+		font-size: 44px;
+	}
+}
+.contacts__item a{
+	display: block;	
+	width: 100%;
+	color: #000;
+}
+.modal-content__show{
+	display: block;
+}

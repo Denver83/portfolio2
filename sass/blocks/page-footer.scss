@@ -1,0 +1,54 @@
+.page-footer{
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 30px;
+	height: 100px;
+	z-index: 2;
+	background: #e8e8e8;
+}
+.page-footer__item a{
+	font-family: "DisneyPark", sans serif;
+	font-size: 30px;
+	color: #000;
+	padding-top: 5px;
+}
+.socials{
+	width: 480px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	margin-bottom: 25px;
+}
+.socials__link{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url(../img/socials.jpg) no-repeat 94.8% 64.5%;
+	border-radius: 5px;
+	opacity: 0.4;
+}
+.socials__link:hover{
+	opacity: 1;
+	-webkit-box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+	box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+.socials__link--in{
+	background: url(../img/socials.jpg) no-repeat 5% 93%;
+}
+.socials__link--telegram{	
+	background: url(../img/socials.jpg) no-repeat 58.5% 64%;
+}
+.socials__link--facebook{
+	background: url(../img/socials.jpg) no-repeat 23% 7.5%;
+}
+.socials__link--youtube{
+	background: url(../img/socials.jpg) no-repeat 41% 7.5%;
+}

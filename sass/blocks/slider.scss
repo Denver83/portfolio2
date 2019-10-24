@@ -1,0 +1,110 @@
+.slides{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+}
+.slider{
+	width: 100%;
+	margin:0 auto;
+	position: absolute;
+	bottom: 225px;
+	right: 33.5%;
+}
+.slider__item{
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	display: none;
+	background-color: rgba(lightslategray, 0.5);
+}
+.btns{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 290px;
+	height: 100px;
+}
+.slider__btns{
+	width: 360px;
+	height: 150px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.prev,
+.next{
+	display: block;
+	cursor: pointer;
+	position: relative;
+	z-index: 10;
+	width: 50px;
+	height: 50px;
+	border: none;
+	background-color: transparent; 
+	background: url(../img/icons3.png) no-repeat 70% 46%;
+	outline: none;
+}
+.prev{
+	background: url(../img/icons3.png) no-repeat 76% 46%;
+}
+.prev:hover,
+.next:hover{
+	opacity: 0.4;
+}
+.slider__item--2,
+.slider__item--3,
+.slider__item--4{
+	display: none;
+}
+.curry{
+	display: block;
+}
+.slider__block{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+.slider__link{
+	display: block;
+	width: 230px;
+	height: 120px;
+	text-align: center;
+	padding-top: 30px;
+	padding-left: 50px;
+	font-size: 27px;
+	color: #fff;
+	-webkit-box-shadow: 20px 20px 20px rgba(0,0,0,0.6);
+	box-shadow: 20px 20px 20px rgba(0,0,0,0.6);
+	&::after{
+		content: '';
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		top: 35px;
+		left: 15px;
+		border-radius: 3px;
+		background: url(../img/icons3.png) no-repeat 52.8% 17%;
+	}
+}
+.slider__link--2{
+	&::after{
+		background: url(../img/icons3.png) no-repeat 12% 24.5%;
+	}
+}
+.slider__link--3{
+	&::after{
+		background: url(../img/icons3.png) no-repeat 18% 17.5%;
+	}
+}
+.slider__link--4{
+	&::after{
+		background: url(../img/icons3.png) no-repeat 87.2% 68.2%;
+	}
+}

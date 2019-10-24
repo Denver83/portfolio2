@@ -1,0 +1,62 @@
+.offers{
+	position: relative;
+	height: 520px;
+	background: #20b2aa;
+	&::before{
+		content: '';
+		width: 800px;
+		height: 745px;
+		position: absolute;
+		top: -70px;
+		right: -10px;
+	  background: url(../img/cl2.png) no-repeat 95% 10%;
+	  z-index: 4;
+	}
+}
+.offers__list{
+	list-style: none;
+	padding-left: 170px;
+	-ms-flex-preferred-size: 55%;
+	flex-basis: 55%;
+}
+.offers__item{
+	position: relative;
+	padding-top: 70px;
+	font-size: 30px;
+	&::before{
+		content: '';
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 30px;
+		left: -120px;
+	}
+}
+.offers__item--1{
+	&::before{
+	background: url(../img/spa-moon-flag-2@3x.png) no-repeat;
+	}
+}
+.offers__item--2{
+	&::before{
+	background: url(../img/spa-saturn@3x.png) no-repeat ;
+	}
+}
+.offers__item--3{
+	&::before{
+	background: url(../img/spa-satellite@3x.png) no-repeat ;
+	}
+}
+.offers__item--4{
+	&::before{
+	background: url(../img/spa-helmet-astronaut@3x.png) no-repeat 100% 0%;
+	}
+}
+.offers__item a{
+	color: #fff;
+	text-shadow: 0 10px 10px rgba(0,0,0,0.5);
+	}
+	.offers__item a:hover{
+	color: #000;
+
+	}
